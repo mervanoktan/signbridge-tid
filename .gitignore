@@ -1,0 +1,21 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Gizli anahtarlar (LLM API anahtarı vb.)
+.env
+
+# Editör / sistem dosyaları
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
+
+# Claude Code çalışma kuralları (sadece yerel)
+CLAUDE.md
+
+# Telif hakkı başkasına ait referans materyaller (sadece yerel kullanım)
+docs/references/
+
+# Not: Toplanan veri setinin (data/) GitHub'a konup konmayacağına Aşama 1'de karar verilecek.

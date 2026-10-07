@@ -1,0 +1,11 @@
+# PyTorch GPU (CUDA 13.0) sürümü ayrı kurulur:
+#   pip install torch==2.14.1 --index-url https://download.pytorch.org/whl/cu130
+# Diğer paketler:
+#   pip install -r requirements.txt
+
+opencv-python==5.0.0.93
+mediapipe==1.1.0
+numpy==2.4.6
+pandas==3.0.6
+scikit-learn==1.9.1
+matplotlib==3.11.2
