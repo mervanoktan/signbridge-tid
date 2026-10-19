@@ -22,6 +22,20 @@
 > Bu kaynaklardaki görseller ve videolar telif hakkıyla korunur. Sadece öğrenme ve doğrulama için
 > kullanılacak; uygulamada gösterilecek işaret görselleri/videoları kendi kayıtlarımızdan üretilecek.
 
+## Hazır TİD Veri Setleri
+
+| Veri seti | İçerik | Format / Erişim | Kullanım planı |
+|---|---|---|---|
+| [TurkSign446 (Zenodo)](https://zenodo.org/records/17267293) · [kod](https://github.com/akaraci/TurkSign446-TSL-Recognition) | 446 kelime (133 statik, 313 dinamik), 10 kişi × 10 tekrar = 44.600 video | **MediaPipe Holistic noktaları** (kare başına 1.662 özellik, NumPy), 8,7 GB, **CC BY 4.0**, kayıt gerektirmiyor | Kelime aşamasının ana veri kaynağı |
+| [AUTSL (ChaLearn)](https://chalearnlap.cvc.uab.cat/dataset/40/description/) · [makale](https://arxiv.org/abs/2008.00932) | 226 günlük kelime, 43 kişi, ~36.000 video | RGB + derinlik video (512×512), CodaLab kaydı ve kullanım şartları gerekli | Ek kelimeler, farklı kişilerde test |
+| [Turkish Sign Language (Fingerspelling) – Kaggle](https://www.kaggle.com/datasets/feronial/turkish-sign-languagefinger-spelling/metadata) | 2.974 alfabe fotoğrafı | Görüntü, Kaggle hesabı gerekli | Alfabe modelini başka kişilerde test |
+| [E-TSL](https://arxiv.org/html/2405.02984v1) | Akıcı (sürekli) TİD cümleleri, eğitim içerikli | Video | İleri çalışma |
+
+> TurkSign446'daki 1.662 özellik eski MediaPipe Holistic formatına karşılık geliyor
+> (vücut 33×4 + yüz 468×3 + iki el 2×21×3). Bizim canlı sistemimiz yeni Tasks API'yi kullanıyor (yüz 478 nokta).
+> Özellik çıkarımında sadece seçili noktaları kullanacağımız için iki format eşleştirilebilir; sol/sağ el ve ayna
+> görüntüsü varsayımları ayrıca kontrol edilecek.
+
 ## İlgili Akademik Çalışmalar
 
 - [Detection of Turkish Sign Language Using Deep Learning and Image Processing Methods (Applied AI, 2021)](https://www.tandfonline.com/doi/full/10.1080/08839514.2021.1982184)
@@ -36,6 +50,12 @@
   – Klasik görüntü işleme yöntemleriyle TİD heceleme tanıma (karşılaştırma için).
 - [Phonological and Morphological Aspects of Lexicalized Fingerspelling in TİD](https://www.researchgate.net/publication/290054124_Phonological_and_Morphological_Aspects_of_Lexicalized_Fingerspelling_in_Turkish_Sign_Language_TID)
   – TİD parmak alfabesinin dilbilimsel özellikleri.
+
+## İndirilen Dosyalar
+
+| Dosya | Kaynak | Not |
+|---|---|---|
+| `docs/references/turk-isaret-dili-alfabesi.pdf` (10,4 MB) | [EGO – TİD Alfabesi PDF](https://isaretdili.ego.gov.tr/wp-content/uploads/2021/08/turk-isaret-dili-alfabesi2.pdf) | 29 harfin çizimleri. Telifli, git'e eklenmez. |
 
 ## Modeller
 

@@ -64,8 +64,8 @@ Alfabe tanıma ayrı bir modelle (landmark tabanlı MLP) yapılır. Arayüzde "K
 
 ### Bölüm 1 – Alfabe (çekirdek)
 - [x] **Aşama 0** – Ortam kurulumu (Python, CUDA, kütüphaneler) — klasör yapısı Aşama 1 ile birlikte kurulacak
-- [ ] **Aşama 1** – Alfabe veri toplama aracı (landmark + el görüntüsü kaydı)
-- [ ] **Aşama 2** – Alfabe modeli eğitimi (MLP) + değerlendirme (confusion matrix, doğruluk)
+- [x] **Aşama 1** – Alfabe veri toplama aracı (landmark + el görüntüsü kaydı) — 28 harf, 9.370 örnek (Ğ eksik)
+- [x] **Aşama 2** – Alfabe modeli eğitimi (MLP) + değerlendirme (confusion matrix, doğruluk) — test %99,62
 - [ ] **Aşama 3** – Gerçek zamanlı alfabe tanıma + kararlılık filtresi + kelime oluşturma
 - [ ] **Aşama 4** – Ses çıkışı (TTS)
 
@@ -146,5 +146,5 @@ Dil_proje/
 ## 8. Açık Kararlar
 
 - [x] TİD alfabesi için güvenilir referans kaynağı → `docs/KAYNAKLAR.md`
-- [ ] ~100 kelimelik dağarcık listesi
+- [ ] ~100 kelimelik dağarcık listesi → öneri hazır: `docs/KELIME_LISTESI.md` (onay bekliyor)
 - [ ] AUTSL lisansı ve kelime içeriği

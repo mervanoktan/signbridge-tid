@@ -54,7 +54,8 @@ pip install -r requirements.txt
 ## Durum
 
 - [x] Ortam kurulumu
-- [ ] Parmak alfabesi tanıma
+- [x] Parmak alfabesi veri seti (28 harf, 9.370 örnek) ve model (test doğruluğu %99,6)
+- [ ] Parmak alfabesi gerçek zamanlı tanıma
 - [ ] Kelime işareti tanıma
 - [ ] Dil katmanı (gloss ↔ Türkçe)
 - [ ] Konuşma ↔ metin
