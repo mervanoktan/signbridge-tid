@@ -1,0 +1,20 @@
+{
+  "harf_sayisi": 28,
+  "ornek": {
+    "egitim": 6232,
+    "dogrulama": 1568,
+    "test": 1570
+  },
+  "test_basarisi": {
+    "mlp": 0.9962,
+    "random_forest": 0.9962
+  },
+  "epoch": 22,
+  "en_cok_karisanlar": [
+    {
+      "gercek": "U",
+      "tahmin": "O",
+      "adet": 6
+    }
+  ]
+}
